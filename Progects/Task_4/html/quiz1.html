@@ -1,0 +1,158 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>quiz1</title>
+        <style></style>
+        <script src="../javascript/main.js"></script>
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".door").click(function() {  
+                    $(this).animate({top: "200px"} , 2000); 
+                    // if($(".answer div:second").text() === correct)
+                    $(".chooses .bg:odd ").css('background' , "green")
+                });
+            });
+            
+            // alert($(".answer div:gt(1)".length)) ;
+
+
+        </script>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+                <a href="">Home</a>
+                
+                <div class="menue">
+                    <button class="b">Services</button>
+                    <div class="menue-links">
+                        <a href="web_design.html">Web Design</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Hosting</a>
+                        <a href="#">Web Training</a>
+                    </div>
+                </div>
+                <a href="product.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            
+        </nav>
+        <div class="aside-main">
+
+        <aside>
+            <a href="home.html">Home page</a>
+            <div class="quiz-menue">
+                <button onclick="drop('quizes')">Quiz</button>
+                <div class="quizes">
+                    <a href="quiz1.html">Quiz 1</a>
+                    <a href="quiz2.html">Quiz 2</a>
+                    <a href="quiz3.html">Quiz 3</a>
+                    
+                </div>
+
+            
+            <div class="slide-menue">
+                <button onclick="drop('slides')">Slider</button>
+                <div class="slides">
+                    <a href="slider1.html">Slider 1</a>
+                    <a href="slider2.html">Slider 2</a>
+                   
+                </div>
+
+            </div>
+
+        </aside>
+        <main class="quiz-main">
+               <div class="question">
+                <p>1 &rpar; question number Two </p>
+                <div class="chooses">
+                        <div class="answer"> 
+                            <div class="bg" >
+                                wrong
+                            </div>
+                            <div class="door">
+                                yes
+                            </div>
+
+                        </div>
+                        <div class="answer">
+                            <div class="bg">
+                                correct 
+                            </div>
+                            <div class="door">
+                                no
+                            </div>
+
+
+                        </div>
+                    </div>
+
+               </div>
+               <div class="question">
+                <p>1 &rpar; question number Three </p>
+                <div class="chooses">
+                        <div class="answer"> 
+                            <div class="bg" >
+                                wrong
+                            </div>
+                            <div class="door">
+                                yes
+                            </div>
+
+                        </div>
+                        <div class="answer">
+                            <div class="bg">
+                                correct 
+                            </div>
+                            <div class="door">
+                                no
+                            </div>
+
+
+                        </div>
+                    </div>
+
+               </div>
+               <div class="question">
+                <p>1 &rpar; question number One </p>
+                <div class="chooses">
+                        <div class="answer"> 
+                            <div class="bg" >
+                                wrong
+                            </div>
+                            <div class="door">
+                                yes
+                            </div>
+
+                        </div>
+                        <div class="answer">
+                            <div class="bg">
+                                correct
+                            </div>
+                            <div class="door">
+                                no
+                            </div>
+
+
+                        </div>
+                    </div>
+
+               </div>
+            
+        </main>
+    </div>
+        <footer>
+            <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+        </footer>
+
+    </body>
+</html>

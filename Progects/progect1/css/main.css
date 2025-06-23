@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#28CB8B;
+    --sacondary-color:#263238;
+    --third-color:#F5F7FA ; 
+}
+body{
+    text-transform: capitalize;
+}
+/*start of haeder*/
+header{
+    padding: 10px 50px;
+}
+header .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+}
+.container .logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.container .links{
+    display: flex;
+    align-items: center;
+}
+.container .links .bar-icon{
+    order: 1;
+    font-size: 2rem;
+    color: var(--main-color);
+    display: none;
+}
+.container .links ul {
+    display: flex;
+    list-style-type: none;
+    
+}   
+.container .links ul li{
+    margin: 5px 10px;
+
+}
+.container .links ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight:800 ;
+    color: black;
+   
+}
+.container .links ul li:not(:last-child):hover{
+    text-decoration: underline;
+}
+.container .links ul li:last-child a{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.container .links ul li:last-child a:hover{
+    background-color: black;
+    }
+
+
+/*end of haeder*/
+
+/*start of main*/
+.main-one{
+    padding: 0 200px;
+    background-image: url(../img/frontend.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(100vh - 109.59px);
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+
+}
+.main-one p{
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+.main-one h2{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+.main-one h2 span{
+    color: var(--sacondary-color);
+}
+.main-one h3{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 15px;
+   
+}
+   
+.main-one .button{
+    margin-top: 15px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px ;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.main-one .button:hover{
+    background-color: black;
+    cursor: grab;
+    }
+/*end of main*/

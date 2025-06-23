@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Receipt</title>
+        <style></style>
+        <script src="../javascript/main.js"></script>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+            <a href="">Home</a>
+            
+            <div class="menue">
+                <button class="b">Services</button>
+                <div class="menue-links">
+                    <a href="animation.html">Animation</a>
+                    <a href="#">Hosting</a>
+                    <a href="#">Web Training</a>
+                    <a href="web_design.html">Web Design</a>
+                    <a href="web_developement.html">Web Development</a>
+                    <a href="customers.html">Customers</a>
+                    <a href="receipt.html">Receipt</a>
+                </div>
+            </div>
+            <a href="product.html">Products</a>
+            <a href="about">About Us</a>
+            <a href="contact">Contact Us</a>
+
+        
+    </nav>
+        <aside></aside>
+        <main>
+            <div id="table">
+                <table id="receipt-table">
+                    <thead>
+                        <tr>
+                            <th>product</th>
+                            <th>price </th>
+                            
+                        </tr>
+                    </thead>
+                </table>
+
+            </div >
+            <div class="Customer-input">
+            <form action="" class="receipt-form">
+               
+                <input id="receipt-product" list="products" >
+                <datalist id="products">
+                    <option value="Fantasy"></option>
+                    <option value="Fiction"></option>
+                    <option value="Nonvels"></option>
+                    <option value="History"></option>
+                </datalist>
+                <input type="number" id="price">
+
+            </form>
+        </div>
+            <button onclick="calc_total()" class="Customer-button">Receipt</button>
+
+        <div class="total">
+            <p > <span id="total-text">0</span> $</p>
+        </div>
+        </main>
+        <footer>
+            <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+        </footer>
+
+    </body>
+</html>

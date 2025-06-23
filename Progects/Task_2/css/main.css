@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    text-transform: capitalize;
+    
+}
+header{
+    background-color: coral;
+    display: flex;
+    width: 1;
+}
+header h1{
+     /* position: relative; */
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: right;
+    color: white;
+    margin: auto;
+    text-shadow: 5px 5px 5px black;
+    
+}
+header img{
+    margin: 10px;
+    width: 60px;
+}
+nav{
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{ 
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+padding: 10px 20px;
+text-decoration: none;
+color: white;
+
+height: 100%;
+transition: 0.1s;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: rgb(220, 3, 3);
+}
+.drop{
+    position: relative;
+}
+.sul{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    transition: 0.1s;
+    z-index: 10;
+}
+.sul li{
+    background-color: rgb(0, 0, 0);
+}
+.sul li a{
+    width: 100%;
+}
+.drop:hover .sul{
+    display: block;
+}
+#watch{
+    padding: 10px;
+    text-align: center;
+    border: solid 5px red;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+h2{
+    text-align:center;
+    margin: 20px 0 ;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+.container .image{
+    position: absolute;
+   font-size: 20px ;
+   font-weight: 700;
+   color: red;
+}
+.container .image img{
+    width: 800px;
+    height: 1000px;
+    border-radius: 10px;
+}
+.container .image .caption {
+    position:absolute ;
+    left: 0;
+    top: 93%;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.container .image .num{
+    position:absolute ;
+    left: 15px;
+    top: 15px;
+    
+}
+.img-tape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.container .change{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    font-size: 40px ;
+   font-weight: 700;
+   color: red;
+   display: flex;
+      width: 100%;
+   justify-content: space-between;
+   padding: 8px 20px;
+}
+.container .change .left , .right{
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.container .change .left:hover , .container .change .right:hover{
+    background-color: gray;
+}
+.img-tape img{
+    width: 100%;
+    height: 150px;
+    filter: grayscale(1);
+}
+/*start of page 2 */
+.main2 .image:not(:first-child){
+display: none;
+}
+.buttons{
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons div{
+    background-color: rgb(208, 132, 38);
+    border: 3px green solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: 0.1s;
+}
+.buttons div:hover{
+    background-color: cadetblue;
+    color: white;
+}
+/*end of page 2 */
+/*start of page 3 */
+.main3 , .main4{
+    width: 1000px;
+    margin: auto;
+}
+.main3 table tr{
+   display: flex;
+}
+.main3 table th , td{
+    padding: 5px 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: darkcyan;
+    
+    width: 100px;
+}
+.main3 table td{
+    background-color: chocolate;
+    color: white;
+}
+.main3 .inp form div:first-child {
+    display: flex;
+   justify-content: space-evenly;
+   
+}
+.main3 .inp form div:first-child input , select{
+    width: 45%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 5px;
+    outline: none;
+}
+.main3 .inp form div:first-child  select option{
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+.main3 .inp form div:last-child{
+    margin: 10px 51.5%;
+    width: fit-content;
+}
+.main3 .inp form div:last-child input{
+    
+    padding: 5px 20px ;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: green;
+}
+.total-price{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: green;
+    padding: 20px 0 ;
+}
+/*end of page 3 */
+
+/*start of page 4 */
+.main4 h2{
+    text-align: left;
+}
+.main4 input{
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 700;
+    padding:5px ;
+    color: green;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.main4 input:focus{
+    border: 2px solid black;
+}
+.main4 input::placeholder{
+    color: red;
+}
+.main4 table{
+    width: 100%;
+}
+.main4 table tr{
+border-bottom: 2px solid black;
+display: flex;
+padding: 0;
+}
+.main4 table tr:hover{
+    background-color: white;
+}
+
+.main4 table th , td {
+    background-color: rgb(252, 117, 117);
+    width: 50%;
+    margin: 0;
+    border-radius: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.main4 table td{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+}
+/*end of page 4 */
+
+footer{
+  background-color:  coral;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;  
+  padding: 5px;
+
+
+}
+ 

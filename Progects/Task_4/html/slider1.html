@@ -1,0 +1,129 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Slider1</title>
+        <style></style>
+        <script src="../javascript/main.js"></script>
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script>
+
+          
+        $(document).ready(function() {
+            var current_idx = 0 ;
+
+             $(".slider1-img img:gt(0)").hide();
+                 $("#slider1-prev").hide();
+
+            $("#slider1-next").click(function(){
+                $(".slider1-img img").eq(current_idx).hide() ;
+                 current_idx =  (current_idx += 1)%($(".slider1-img img").length) ;
+                 $(".slider1-img img").eq(current_idx).show() ;
+                $("#slider1-prev").show() ;
+                if(current_idx == 0 )
+            {
+                $("#slider1-prev").hide() ;
+            }
+
+
+            });
+            
+
+            $("#slider1-prev").click(function(){
+                $(".slider1-img img").eq(current_idx).hide() ;
+                current_idx -= 1 ; 
+                $(".slider1-img img").eq(current_idx).show() ;
+                if(current_idx == 0 )
+            {
+                $("#slider1-prev").hide() ;
+            }
+
+                
+
+
+            });
+            
+        });
+            
+
+            
+            // alert($(".answer div:gt(1)".length)) ;
+
+
+        </script>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+                <a href="">Home</a>
+                
+                <div class="menue">
+                    <button class="b">Services</button>
+                    <div class="menue-links">
+                        <a href="web_design.html">Web Design</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Hosting</a>
+                        <a href="#">Web Training</a>
+                    </div>
+                </div>
+                <a href="product.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            
+        </nav>
+        <div class="aside-main">
+
+        <aside>
+            <a href="home.html">Home page</a>
+            <div class="quiz-menue">
+                <button onclick="drop('quizes')">Quiz</button>
+                <div class="quizes">
+                    <a href="quiz1.html">Quiz 1</a>
+                    <a href="quiz2.html">Quiz 2</a>
+                    <a href="quiz3.html">Quiz 3</a>
+                    
+                </div>
+
+            
+            <div class="slide-menue">
+                <button onclick="drop('slides')">Slider</button>
+                <div class="slides">
+                    <a href="slider1.html">Slider 1</a>
+                    <a href="slider2.html">Slider 2</a>
+                   
+                </div>
+
+            </div>
+
+        </aside>
+        <main class="quiz-main">
+            <div class="slider1-img">
+                <img src="../img/—Pngtree—wood bookcases on the wall_2760330.jpg" alt="">
+                <img src="../img/—Pngtree—ornate wooden bookcase filled with_15758412.jpg" alt="">
+                <img src="../img/Screenshot 2025-01-30 125659.png" alt="">
+                <img src="../img/3973429.jpg" alt="">
+                <img src="../img/AdobeStock_453062737_Preview_Editorial_Use_Only.jpeg" alt="">
+                <img src="../img/james-v5gIzrQ_P60-unsplash.jpg" alt="">
+
+            </div>
+            <div class="Slider1-buttons">
+                <button style="display: none;" id="slider1-prev">Previous &lt; </button>
+                <button id="slider1-next">Next &gt; </button>
+                
+            </div>
+               
+        </main>
+    </div>
+        <footer>
+            <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+        </footer>
+
+    </body>
+</html>

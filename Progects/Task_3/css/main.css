@@ -1,0 +1,536 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    
+}
+header{
+    background-color: aqua;
+    display: flex;
+    
+
+}
+header h1{
+     /* position: relative; */
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: right;
+    color: blue;
+    margin: auto;
+}
+header img{
+    margin: 10px;
+}
+nav{
+    
+    display: flex;
+    background-color: cadetblue;
+    height: 150px;
+    margin:20px 0;
+}
+/* .links{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    padding-left:50% ;
+    padding-right:50% ;
+   
+} */
+
+ nav a , .b {
+    
+    color:white ;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid white;
+    align-content: center;
+}
+
+.b{
+   width: 600px;
+   
+    background-color: transparent;
+}
+.menue {
+    position: relative;
+}
+
+.menue-links {
+    display: none;
+    position: absolute;
+    width: 800px;
+    top: 150px;
+    z-index: 1;
+    height:100px;
+}
+
+.menue-links a {
+    display: block;
+    color: white;
+    background-color:cadetblue;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.menue-links a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.menue:hover .menue-links {
+    display: block;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+.b:hover{
+    background-color: white;
+    color: black;
+}
+
+main .img1{
+    width: 100%;
+    height: 40vh;
+}
+.articles{
+    display: flex;
+    width: 100%;
+    background-color:transparent;
+}
+article{
+    
+    display: inline;
+    border: blue 10px solid;
+    width: 100%;
+    background-color:white ;
+    font-size: 2vh;
+    font-weight: bolder;
+    margin: 50px;
+    padding: 20px;
+
+}
+article img{
+   
+width: 100%;
+height: 50vh;
+
+
+}
+footer{
+  background-color:  cadetblue;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;  
+  height: 300px;
+  padding-top: 20px;
+}
+/************************animation*************************/
+
+
+.web-main{
+    margin: 50px auto ;
+    width: 165vh;
+    height:100vh;
+    background-image:linear-gradient(yellow , green);
+    
+}
+.web-main .object{
+    width: 15vh;
+    height: 15vh;
+    background-color: red;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+0% { background-color: red;transform: translate(0 , 0 ); }    
+25% { background-color: green;transform: translate(150vh , 0 ); }    
+50% { background-color: blue;transform: translate(150vh , 85vh ); }    
+75% { background-color: black;transform: translate(0 , 85vh ); }    
+100% { background-color: red;transform: translate(0 , 0 ); }    
+}
+/************************product*************************/
+.product-main{
+    width: 90%;
+    margin: 0 auto ;
+    padding-top: 50px;
+    background-color: transparent;
+}
+td {
+    padding: 20px;
+}
+.product{
+    padding: 50px;
+    background-color: azure;
+    border: 5px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.588);
+    
+}
+.product img{
+    max-width: 100%;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.588);
+}
+.product img:hover{
+    transform: scale(1.02);
+}
+/************************about*************************/
+.about-main{
+    width: 90%;
+    margin: 0 auto ;
+    padding-top: 50px;
+    background-color: rgba(228, 215, 130, 0.472);
+}
+.about-main .about{
+    margin: 40px;
+    padding:40px ;
+    max-width:100%;
+    height: 30vh;
+    background-color: white;
+    font-size: 3vh ;
+    font-weight: bolder;
+    display:flex;
+    border: 10px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.306);
+    }
+
+.about img{
+    margin: 40px;
+    max-width: 100%;
+    
+}
+.three{
+    
+    display: flex;
+    max-width:100%;
+    margin-top: 50px;
+}
+.three div{
+    margin:  40px;
+    max-width: 100%;
+    background-color: rgba(240, 248, 255, 0.492);
+    padding: 50px;
+    font-size: 3vh ;
+    font-weight: bolder;
+    border: 10px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.306);
+  
+
+}
+.three div img{
+ 
+  width: 40vh;
+  margin: auto;
+  display: block;
+}
+
+.three div p {
+    text-align: center;
+}
+/************************contact*************************/
+.message{
+    font-size: 4vh;
+    font-weight: bolder ;
+    text-align: center;
+}
+.contact{
+    margin: 0 100px;
+    display: flex;
+    
+    padding: 50px;
+}
+.contact img{
+   width:50%;
+    height: 100vh;
+    margin: 0 50px;
+}
+form{
+    width: 100%;
+    max-height: 100%;
+   
+}
+
+.input-box{
+    width: 100%;
+    height: 250px;
+   margin: 0 0 10vh 0;
+    
+}
+.input-box input ,  #contact-text{
+    width: 98%;
+    height: 100%;
+    font-size: 3vh;
+    font-weight: bolder;
+    padding-left: 0;
+    padding: 20px;
+
+}
+.input-box input:hover{
+    border: 5px solid black;
+    border-radius: 50px;
+   
+}
+
+.input-box label{
+    width: 100%;
+    font-size: 4vh;
+    
+}
+#contact-text{
+    height: 25vh;
+}
+.contact-button{
+    margin-top: 15vh;
+    width: 20vh;
+    height: 6vh;
+    background-color: green;
+    font-size: 3vh;
+    font-weight: bolder;
+    margin-left:40%;
+    border: none;
+    border-radius: 50px;
+    color: black;
+}
+.contact-button:hover{
+    background-color: rgb(70, 142, 70);
+}
+.input-box textarea:hover{
+    border: 5px solid black;
+    border-radius: 50px;
+    
+}
+/************************WEB DESIGN*************************/
+.web-design-main{
+    background-color: rgb(237, 230, 230);
+    margin: 50px;
+    margin-bottom: 0px;
+}
+.web-design-main form {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    /* background-color: blue; */
+    display: flex;
+    margin: 50px;
+    height: 1000px;
+    position: relative;
+}
+.form-container{
+    width: 50%;
+     background-color: rgb(255, 255, 255); 
+    margin: 10px 50px;
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.394);
+}
+input ,#sub {
+    width: 100%;
+    height: 70px;
+    margin-bottom:50px  ;
+    outline: 2px solid black;
+    font-size: 3vh;
+    font-weight: bolder;
+    color: green;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+input:focus ,#sub:focus{
+    background-color: rgba(169, 169, 169, 0.709);
+}
+#sub{
+    height: 350px;
+}
+label{
+    font-size: 3vh;
+    font-weight: bolder;
+
+
+}
+.screen{
+    width: 50%;
+    background-color: aliceblue;
+    height: 600px;
+    margin: 10px 50px;
+    padding: 50px 20px;
+    font-size: 4vh;
+    font-weight: bolder;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.394);
+}
+.web_design-button{
+    background-color: green;
+    color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    align-content: center;
+    margin: 10px 50% 30px;
+}
+.web_design-button:hover{
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
+/***********************web_developement*************************/
+.books-type{
+    background-color: rgb(255, 253, 253);
+    width: 50%;
+    height: 1500px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.394);
+}
+
+.books-type img{
+    position: absolute;
+    height: 1000px;
+    width: 800px;
+    border-radius: 30px;
+    visibility: hidden;
+}
+.books-type #image{
+   visibility: visible;
+}
+.web_developement-pruducts{
+    margin: 50px;
+    height: 400px;
+    background-color: aqua;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.web_developement-butttons{
+    background-color: green;
+    width: 300px;
+    height:100px ;
+    color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    margin: auto 200px  ;
+    padding: auto;
+    
+}
+.web_developement-butttons:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 5px rgb(135, 135, 135) solid;
+
+}
+/***********************customer*************************/
+#table{
+    
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    padding: 20px 200px;
+}
+#table table{
+    width: 100%;
+    border: 10px solid black;
+    font-size: 3vh;
+    font-weight: bolder;
+   
+
+}
+#table table th{
+    border: 5px solid rgb(0, 0, 0);
+    width: 200px;
+}
+.Customer-input {
+    display: flex;
+    background-color: rgb(251, 251, 251);
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.394);
+
+}
+.Customer-input form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Customer-input input {
+    width: 20%; 
+    height: 100px;
+    margin-left:150px; 
+    
+}
+.Customer-button{
+    background-color: green;
+    width: 30%;
+    height:200px ;
+    color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    padding: 30px;
+    margin-left: 35%;
+    margin-bottom: 50px;
+    
+}
+.Customer-button:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 5px rgb(135, 135, 135) solid;
+
+}
+/***********************customer*************************/
+.Customer-input #receipt-product,#price{
+    width: 40%;
+    height: 150px;
+    border-radius: 50px;
+   
+    
+}
+
+.receipt-form 
+{
+    display: flex;
+
+    align-items: center;
+    padding-top: 50px  ;
+}
+.total{
+    height: 500px;
+    width: 500px;
+    background-color: transparent;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: green;
+     text-align:center ;
+     justify-content:center ;
+     display: flex;
+     margin-left:auto ;
+     margin-right:auto ;
+
+}

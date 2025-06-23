@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>page1</title>
+        <style></style>
+        <script></script>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+            <ul>
+                <li><a href="home.html">page 1 </a></li>
+                <li class="drop"><a href="">dropdown</a>
+                    <ul class="sul">
+                        <li><a href="">part 1</a></li>
+                        <li><a href="">part 2</a></li>
+                        <li><a href="">part 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="page1.html">page 2</a></li>
+                <li><a href="page2.html">page 3</a></li>
+                <li><a href="page3.html">page 4</a></li>
+                <li><a href="page4.html">page 5</a></li>
+               </ul>
+
+            
+        </nav>
+                <main>
+                <h2>slideshow gallery</h2>
+            <div class="container">
+                <div class="image" style="z-index: 4;">
+                    <img src="../img/3973429.jpg" alt="">
+                    <div class="caption"> caption 1 </div>
+                    <div class="num"> 1/4</div>
+                </div>
+                <div class="image" style="z-index: 3;">
+                    <img src="../img/modern-bookstore-showcasing-rows-vibrant-books.jpg" alt="">
+                    <div class="caption"> caption 2 </div>
+                    <div class="num"> 2/4</div>
+                </div>
+                <div class="image" style="z-index: 2;">
+                    <img src="../img/AdobeStock_453062737_Preview_Editorial_Use_Only.jpeg" alt="">
+                    <div class="caption"> caption 3 </div>
+                    <div class="num"> 3/4</div>
+                </div>
+                <div class="image" style="z-index: 1;">
+                    <img src="../img/james-v5gIzrQ_P60-unsplash.jpg" alt="">
+                    <div class="caption"> caption 4 </div>
+                    <div class="num"> 4/4</div>
+                </div>
+
+                <div class="change">
+                    <div onclick="changeright()" class="left">&#8249;</div>
+                    <div onclick="changeleft()" class="right">&#8250;</div>
+                </div>
+            </div>
+           
+            <div class="img-tape">
+                <img onclick="change_by_tape(0)" class="t-img" src="../img/3973429.jpg" style="filter: grayscale(0);" alt="" >
+                <img onclick="change_by_tape(1)" class="t-img" src="../img/modern-bookstore-showcasing-rows-vibrant-books.jpg" alt="">
+                <img onclick="change_by_tape(2)" class="t-img" src="../img/AdobeStock_453062737_Preview_Editorial_Use_Only.jpeg" alt="">
+                <img onclick="change_by_tape(3)" class="t-img" src="../img/james-v5gIzrQ_P60-unsplash.jpg" alt="">
+            </div>
+                </main>
+                <footer>
+                    <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+                </footer>
+           
+    </body>
+</html>

@@ -1,0 +1,304 @@
+*{
+    -webkit-box-sizing:border-box ; 
+    -moz-box-sizing:border-box ; 
+    box-sizing:border-box ; 
+}
+@font-face {
+    font-family: 'my_font';
+    src: url('../font/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+body {
+    font-family: 'my_font', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+nav{
+    padding: 10px  50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 360px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white ;
+    width: 100%;
+}
+nav h1{
+   margin: 0 10px; 
+}
+.link-package{
+  
+    display: flex;
+    align-items: center;
+    
+}
+.link-package i{
+    font-size: 25px;
+    display: none;
+}
+.links{
+   display: flex;
+   align-items: center;
+}
+
+.link-package .links a{
+    margin: 10px 10px;
+    display: block;
+    text-decoration: none;
+    color: gray;
+}
+.link-package .links a:last-child{
+    color: black;
+    border: 1px solid black;
+    padding:5px 12px;
+}
+.link-package .links a:not(:last-child):hover{
+    color: black;
+    text-decoration: underline;
+ 
+}
+.link-package .links a:last-child:hover{
+    background-color: rgb(0, 220, 0);
+    color: white;
+    border: 1px solid rgb(0, 220, 0);
+ 
+}
+
+@media (max-width:902px){
+    .link-package .links{
+        display: none;
+    }
+    .link-package i{
+        display: block;
+        margin: 10px;
+        align-self: flex-end;
+    }
+    .link-package:hover .links
+    {
+        display: block;
+        position: absolute;
+        top:80%;
+        left: 0;
+        background-color: white;
+        width: 100vw;
+        z-index: 1;
+        
+    }
+    .link-package:hover .links a:not(:last-child){
+        border-bottom: 1px solid black;
+        padding: 10px;
+}
+}
+main .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/study.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: calc(100vh);
+    padding-left: 50px;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+
+main .image h2{
+font-size: 50px;
+font-weight: 900;
+margin: 10px 0;
+}
+main .image p{
+    font-size: 20px;
+    font-weight: 500;
+}
+main .image .btn{
+    background-color: rgb(0, 220, 0);
+    border: 1px solid rgb(0, 220, 0);
+    width: fit-content;
+    padding: 7px 12px;
+    transition: 0.5s;
+}
+main .image .btn:hover {
+    border: 1px solid black;
+    background-color: rgb(1, 162, 1);
+    
+}
+
+main article{
+    padding: 40px  50px;
+    display: flex;
+    align-items: center;
+    
+}
+main article .details{
+    padding: 10px 0;
+    margin-right: 20px;
+   
+    height: calc(100%);
+}
+main article .details h3{
+    margin: 10px 0;
+    font-weight: 800;
+}
+main article .details p{
+ font-weight: 400;
+}
+main article .details p:first-child{
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(0, 220, 0);
+}
+main article .details a{
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}
+@media(max-width:700px){
+    main article{
+        display: block;
+    }
+    main article .details{
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    main article .img{
+       margin: 0  auto;
+       text-align: center;
+    }
+}
+main .second-article{
+    background-color:#eee;
+    display: block;
+}
+.cards{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.cards .one-card{
+    width: calc((100% - 20px) / 3 );
+    background-color: white;
+}
+.cards .one-card img{
+    width: 100%;
+    height: auto;
+    max-height:40vh ;
+    
+
+}
+.one-card .card-details{
+    padding: 10px;
+    
+    
+}
+.one-card .card-details h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+.one-card .card-details p{
+    
+    color: gray;
+    margin-bottom: 70px;
+}
+@media(max-width:700px){
+    .cards{
+        display: block;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .cards .one-card{
+        width: calc(100%  );
+        background-color: white;
+        margin-bottom: 10px;
+        box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.columns .col{
+    width: calc(( 100% - 20px ) / 3);
+    padding: 10px;
+    color: gray;
+}
+.columns img{
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    
+}
+@media(max-width:700px){
+    .columns{
+        display: block;
+        margin-top: 20px;
+    }
+    .columns .col{
+     margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+}
+.two-cards{
+    display: flex  ;
+    justify-content: space-between;   
+}
+.two-cards .one-card
+{
+     width: calc((100% - 40px) /2) ;
+}
+.two-cards .one-card img{
+   width: 100%;
+   height: 400px;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section {
+    
+    /* background: red; */
+    width: 48% ;
+    box-sizing: border-box; 
+}
+
+.inp{
+    
+    margin-top: 10px;
+}
+.inp input , textarea{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+textarea{
+    height: 100px;
+}
+.inp_check{
+    display: flex;
+}
+.check{
+    width: 32px !important;
+}
+.inp span{
+    color: red;
+}
+.inp .btn{
+    background-color:rgb(0, 220, 0);
+    color: white;
+    font-weight: 700;
+    transition: background-color 1s;
+}
+.inp .btn:hover{
+     background-color:rgb(2, 119, 2);
+}

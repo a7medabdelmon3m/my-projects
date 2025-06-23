@@ -1,0 +1,101 @@
+body{
+    background-image: url(img/Screenshot\ 2025-01-24\ 191632.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:   sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+.data{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    width: 30%;
+    height: 70vh;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 30vh 20px rgba(251, 251, 251, 0.363);
+    border: solid 2ps rgba(251, 251, 251, 0.32);;
+
+}
+figure img{
+    border-radius: 100%;
+    margin-top: 20%;
+    margin-left:35%;
+    box-shadow: 5px 2px 30px 3px rgba(0, 0, 0, 0.35);
+
+    width: 30%;
+    height: 30%;
+    
+}
+form{
+    
+    
+    height:50%;
+}
+form div{
+    /* padding-top:5% ; */
+    padding-top: px;
+    
+    
+}
+form input {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 2px 30px 3px rgba(0, 0, 0, 0.35);
+    width: 80%;
+    height:5vh;
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 60px;
+    font-weight: bolder; 
+
+}
+input::placeholder{
+   
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+form label{
+    margin-left: 10%;
+    font-size: 40px;
+    font-size: 60px;
+    color: #fff;
+    
+     
+}
+.Login-button{
+    width: 20%;
+    margin-left: 40%;
+    font-size: 50px;
+    background-color: lime;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.261);
+    
+}
+.Login-button:hover{
+    background-color: rgb(163, 255, 163);
+}
+.Forget{
+    
+   
+    margin-left: 67%;
+   width: 100%;
+    margin-top: 20px;
+    
+}
+.Forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.Forget a:hover{
+    text-decoration: underline;
+    color: #9c9c9c;
+}
+/**************************Home********************************/

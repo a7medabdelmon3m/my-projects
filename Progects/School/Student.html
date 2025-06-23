@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content=" htis is student page ">
+        <meta name="viewport" content="width=device-width , initial-scale=0.1">
+        <title>Student</title>
+        <style></style>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var num = 1 ;
+                var col = 0 ;
+                var heightValue = 5 ;
+                $(".btn").click(function(){
+                    num++ ;
+                   
+                    var id = $("#id").val() ;
+                    var name = $("#name").val() ;
+                    var gender = $("#gender").val() ;
+                    var date = $("#date").val() ;
+                    var city = $("#city").val() ;
+                    var phone = $("#phone").val() ;
+                    var level= $("#level").val() ;
+                    var religion = $("#religion").val() ;
+                    var password = $("#password").val() ;
+
+                    
+                    $("table").append('<tr><td>' + num+ '</td><td>'+id + '</td><td>'+ name+ '</td><td>'+ gender+ '</td><td>'+ date+ '</td><td>'+city + '</td><td>'+phone + '</td><td>'+ level+ '</td><td>'+religion + '</td><td>'+ password + '</td></tr>' )
+                    $("tr:last").css("background-color", `rgba(${200}, ${100}, ${col}, ${0.9})`);
+                    $("tr:last").css("height", heightValue + "px");
+                    col += 5 ; 
+                    heightValue += 10 ;   
+                }) ;             
+                $(".btnd").click(function() {
+                    // التحقق مما إذا كان آخر صف داخل thead، إذا كان كذلك لا تحذفه
+                    if (   num == 1) {
+                        return;
+                    }
+
+                    // حذف آخر صف
+                    $("tr:last").remove();
+                    col -= 5 ; 
+                    heightValue -= 10 ; 
+                    
+                    num--;
+                });
+
+
+            });
+            
+        </script>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDVxy0mUyXSeLMHwgauJVj6vvqQneW-Cltw&s" alt="">
+            <h1>Welcome to Student Page </h1>
+        </header>
+        <nav> 
+            <div>
+                <a href="">About</a>
+                <a href="">Contact us</a>
+                <a href="">Help</a>
+            </div>
+        </nav>
+
+        <div class="home-aside-main">
+
+        <aside class="student-aside">
+           <div class="home-b">
+                <img src="img/home.png" alt="">
+                <p>Home</p>
+           </div>
+           <form action="" method="get">
+            <div class="student-data">
+                <input type="text" 
+                name="National ID" 
+                id="id" 
+                placeholder="National ID"
+                required
+                maxlength="14"
+                minlength="14"
+                autofocus
+                >
+                <br>
+                <input type="text" 
+                name="Student Name" 
+                id="name" 
+                placeholder="Student Name"
+                required
+
+                >
+                <br>
+                <input list="Gender" placeholder="Gender" required id="gender">
+                <datalist id="Gender">
+                    <option value="M">
+                    <option value="F">
+                </datalist>
+                <br>
+                <input type="date" 
+                name="Birth Data" 
+                id="date"
+                placeholder="Birth Date"
+                required
+                value="2002-10-21"
+                >
+                <br>
+                <input list="City" placeholder="City" id="city">
+                <datalist id="City">
+                    
+                    <option value="Alexandria">
+                    <option value="Assiut">
+                    <option value="Aswan">
+                    <option value="Beheira">
+                    <option value="Bani Suef" selected>
+                    <option value="Cairo">
+                    <option value="Daqahliya">
+                    <option value="Damietta">
+                    <option value="Fayyoum">
+                    <option value="Gharbiya">
+                    <option value="Giza">
+                    <option value="Helwan">
+                    <option value="Ismailia">
+                    <option value="Kafr El Sheikh">
+                    <option value="Luxor">
+                    <option value="Marsa Matrouh">
+                    <option value="Minya">
+                    <option value="Monofiya">
+                    <option value="New Valley">
+                    <option value="North Sinai">
+                    <option value="Port Said">
+                    <option value="Qalioubiya">
+                    <option value="Qena">
+                    <option value="Red Sea">
+                    <option value="Sharqiya">
+                    <option value="Sohag">
+                    <option value="South Sinai">
+                    <option value="Suez">
+                    <option value="Tanta">
+
+                </datalist>
+                <br>
+                <input type="tel" 
+                name="Mobile" 
+                id="phone"
+                placeholder="Mobile" 
+                required>
+                <br>
+                <input list="Level" name="Level"placeholder="Levels" required id="level">
+                <datalist id="Level">
+                    <option value="One">
+                    <option value="Two">
+                    <option value="Three">
+                </datalist>
+                <br>
+                <input list="Religions" name="Religion" id="religion"placeholder="Religion" required>
+                <datalist id="Religions">
+                <option value="Islam">
+                <option value="Christian">
+                </datalist>    
+                <br>
+                <input type="password"
+                 name="password" 
+                 id="password"
+                 placeholder="password"
+                 required
+                 maxlength="6"
+                 minlength="12"
+                 >
+
+            </div>
+            <br>
+            <input class="btn" type="submit" value="&plus; ADD">
+            <br>
+            <input class="btnd" type="reset" value=" Delete">
+        </form>
+
+
+        </aside>
+
+
+        <main class="student-main">
+            <div class="student-title">
+                <img src="https://cdn-icons-png.flaticon.com/128/9825/9825986.png" alt="">
+                <h3>Student</h3>
+                
+            </div>
+            <div class="search">
+               <input type="search" name="search" placeholder="search" >
+               <img src="img/search-interface-symbol.png" alt="">
+            </div>
+            <div class="student-details">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Numbers</th>
+                            <th>National ID</th>
+                            <th>Student Name</th>
+                            <th>Gender</th>
+                            <th>Birth Date</th>
+                            <th>City</th>
+                            <th>Mobile</th>
+                            <th>Level</th>
+                            <th>Religion</th>
+                            <th>password</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>30210212201099</td>
+                        <td>Ahemd Abdelmoneim Mohammed</td>
+                        <td>M</td>
+                        <td>2004/10/21</td>
+                        <td>Cairo</td>
+                        <td>01207179348</td>
+                        <td>First</td>
+                        <td>Islam</td>
+                        <td>123456</td>
+                      
+                    </tr>
+                </table>
+
+            </div>
+        </main>
+    </div>
+        <footer>
+            <p>&copy; COPYRIGHT 2025 | Developed By Ahmed Moneim</p>
+        </footer>
+    </body>
+
+</html>

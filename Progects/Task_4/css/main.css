@@ -1,0 +1,504 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+
+    
+}
+header{
+    background-color: aqua;
+    display: flex;
+    
+
+}
+header h1{
+     /* position: relative; */
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: right;
+    color: blue;
+    margin: auto;
+}
+header img{
+    margin: 10px;
+}
+nav{
+    
+    display: flex;
+    background-color: cadetblue;
+    height: 150px;
+    margin:20px 0;
+}
+/* .links{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    padding-left:50% ;
+    padding-right:50% ;
+   
+} */
+
+ nav a , button {
+    
+    color:white ;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid white;
+    align-content: center;
+}
+
+button{
+   width: 600px;
+   
+    background-color: transparent;
+}
+.menue {
+    position: relative;
+}
+
+.menue-links {
+    display: none;
+    position: absolute;
+    width: 800px;
+    top: 150px;
+    z-index: 1;
+    height:100px;
+}
+
+.menue-links a {
+    display: block;
+    color: white;
+    background-color:cadetblue;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.menue-links a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.menue:hover .menue-links {
+    display: block;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+.b:hover{
+    background-color: white;
+    color: black;
+}
+.aside-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    flex: 1;
+}
+
+main .img1{
+    width: 100%;
+    height: 40vh;
+}
+.articles{
+    display: flex;
+    width: 100%;
+    background-color:transparent;
+}
+article{
+    
+    display: inline;
+    border: blue 10px solid;
+    width: 100%;
+    background-color:white ;
+    font-size: 2vh;
+    font-weight: bolder;
+    margin: 50px;
+    padding: 20px;
+
+}
+article img{
+   
+width: 100%;
+height: 50vh;
+
+
+}
+footer{
+  background-color:  cadetblue;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;  
+  height: 300px;
+  padding-top: 20px;
+}
+aside{
+   
+    height: 150vh;
+    width: 800px;
+    background-color: black;
+    padding:50px 20px; 
+}
+.quiz-menue , .slide-menue{
+    position: relative;
+}
+.quizes,.slides{
+    
+    text-align: center;
+    display: none;
+    width: 800px;
+    
+}
+aside a{
+    background-color:rgb(30, 30, 30) ;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+}
+aside button{
+    background-color: rgb(30, 30, 30);
+    margin: 20px 0 ;
+    font-size: 3vh;
+    font-weight: bolder;
+    width: 100%;
+    border: none;
+    
+}
+aside button:hover , aside a:hover{
+    background-color: green;
+    color: black;
+}
+
+
+
+/************************WEB DESIGN*************************/
+
+
+.web-main{
+    
+    margin: 50px auto ;
+    width: 165vh;
+    height:100vh;
+    background-image:linear-gradient(yellow , green);
+    
+}
+.web-main .object{
+    width: 15vh;
+    height: 15vh;
+    background-color: red;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+0% { background-color: red;transform: translate(0 , 0 ); }    
+25% { background-color: green;transform: translate(150vh , 0 ); }    
+50% { background-color: blue;transform: translate(150vh , 85vh ); }    
+75% { background-color: black;transform: translate(0 , 85vh ); }    
+100% { background-color: red;transform: translate(0 , 0 ); }    
+}
+/************************product*************************/
+.product-main{
+    width: 90%;
+    margin: 0 auto ;
+    padding-top: 50px;
+    background-color: transparent;
+}
+td {
+    padding: 20px;
+}
+.product{
+    padding: 50px;
+    background-color: azure;
+    border: 5px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.588);
+    
+}
+.product img{
+    max-width: 100%;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.588);
+}
+.product img:hover{
+    transform: scale(1.02);
+}
+/************************about*************************/
+.about-main{
+    width: 90%;
+    margin: 0 auto ;
+    padding-top: 50px;
+    background-color: rgba(228, 215, 130, 0.472);
+}
+.about-main .about{
+    margin: 40px;
+    padding:40px ;
+    max-width:100%;
+    height: 30vh;
+    background-color: white;
+    font-size: 3vh ;
+    font-weight: bolder;
+    display:flex;
+    border: 10px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.306);
+    }
+
+.about img{
+    margin: 40px;
+    max-width: 100%;
+    
+}
+.three{
+    
+    display: flex;
+    max-width:100%;
+    margin-top: 50px;
+}
+.three div{
+    margin:  40px;
+    max-width: 100%;
+    background-color: rgba(240, 248, 255, 0.492);
+    padding: 50px;
+    font-size: 3vh ;
+    font-weight: bolder;
+    border: 10px solid gold;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.306);
+  
+
+}
+.three div img{
+ 
+  width: 40vh;
+  margin: auto;
+  display: block;
+}
+
+.three div p {
+    text-align: center;
+}
+/************************about*************************/
+.message{
+    font-size: 4vh;
+    font-weight: bolder ;
+    text-align: center;
+}
+.contact{
+    margin: 0 100px;
+    display: flex;
+    
+    padding: 50px;
+}
+.contact img{
+   width:50%;
+    height: 100vh;
+    margin: 0 50px;
+}
+form{
+    width: 100%;
+    max-height: 100%;
+   
+}
+
+.input-box{
+    width: 100%;
+    height: 250px;
+   margin: 0 0 10vh 0;
+    
+}
+.input-box input ,  textarea{
+    width: 98%;
+    height: 100%;
+    font-size: 3vh;
+    font-weight: bolder;
+    padding-left: 0;
+    padding: 20px;
+
+}
+.input-box input:hover{
+    border: 5px solid black;
+    border-radius: 50px;
+   
+}
+
+.input-box label{
+    width: 100%;
+    font-size: 4vh;
+    
+}
+textarea{
+    height: 25vh;
+}
+.button{
+    margin-top: 15vh;
+    width: 20vh;
+    height: 6vh;
+    background-color: green;
+    font-size: 3vh;
+    font-weight: bolder;
+    margin-left:40%;
+    border: none;
+    border-radius: 50px;
+}
+.button:hover{
+    background-color: rgb(70, 142, 70);
+}
+.input-box textarea:hover{
+    border: 5px solid black;
+    border-radius: 50px;
+    
+}
+/************************quiz1*************************/
+.quiz-main{
+    
+    background-color: white;
+    margin: 100px;
+    font-size: 4vh;
+    font-weight: bolder;
+    /* flex-wrap: wrap; */
+    
+}
+.question{
+    /* background-color: red; */
+    margin: 0 100px;
+    padding: 0 100px;
+    
+    
+
+}
+.chooses{
+    /* background-color: blue; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    
+}
+.answer{
+    
+    width: 30%;
+    margin: 20px;
+    position: relative;
+}
+.bg {
+    background-color: rgb(253, 13, 13);
+    
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.door{
+    border: 5px black solid;
+    position: absolute; 
+    width: 100%;
+    height: 200px;
+    background-color: rgb(242, 239, 70);
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+/************************quiz1*************************/
+.quiz2-cotainer{
+    background-color: cadetblue;
+    margin: 50px;
+}
+.cotainer-title{
+    background-color: aqua;
+    text-align: center;
+    border-bottom: 7px black solid;
+}
+.cotainer-body{
+    background-color: rgb(203, 204, 183);
+    text-align: center;
+    height: 30vh;
+    font-size: 4vh;
+    word-spacing: 10px;
+    padding: 20px;
+    display: none;
+}
+/************************quiz3*************************/
+.quiz3-inputs input{
+ width: 100px;
+ height: 100px;
+ margin: 100px;
+}
+.check-answer{
+    
+    text-align: center;
+    background-color: rgb(247, 221, 107);
+    border: 7px solid black;
+    width: 20%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.Counter{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 20%;
+    color: green;
+    margin-top: 200px;
+    text-align: center;
+    padding: 50px;
+
+}
+/************************slider1*************************/
+.slider1-img{
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(252, 241, 110);
+    margin:  200px 200px 0 200px;
+    height: 60vh;
+    /* border: 15px rgb(0, 0, 0) solid; */
+   
+}
+.slider1-img img{
+    width: 60%;
+    height: 1000px;
+     position: absolute; 
+     border-radius: 40px;
+     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.306);
+     border: 15px white solid;
+
+}
+.Slider1-buttons{
+   background-color:rgb(252, 241, 110) ;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin:  0 200px 0 200px;
+    border: 15px rgb(0, 0, 0) solid;
+}
+#slider1-prev , #slider1-next {
+    background-color: green;
+    color: black;
+    margin: 0 10px;
+    padding: 20px;
+}
+#slider1-prev:focus , #slider1-next:focus{
+    background-color: aliceblue;
+    
+}
+

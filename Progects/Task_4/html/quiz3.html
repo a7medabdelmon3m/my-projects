@@ -1,0 +1,186 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>quiz3</title>
+        <style></style>
+        <script src="../javascript/main.js"></script>
+        <script src="../jquery-3.7.1.min.js"></script>
+        <script>
+
+        var currentCase = null; 
+        current_answer = null ;
+$(document).ready(function() {
+    $(".cotainer-title").mouseover(function() {
+        
+        var nextBody = $(this).next(".cotainer-body");
+
+        
+        if (currentCase && nextBody[0] !== currentCase[0])
+         {
+            currentCase.slideUp(); 
+            currentCase.prev(".cotainer-title").children("span").text("+");
+        }
+
+      
+        if (nextBody.is(":visible"))
+         {
+        nextBody.slideUp();
+        $(this).children("span").text("+");
+            currentCase = null;
+        } else 
+        {
+        nextBody.slideDown(); 
+        $(this).children("span").text("-");
+        currentCase = nextBody;
+        }
+        // 
+    });
+ 
+    $(".check-answer").click(function() {
+        var total = Number($("#res").text()) ;
+        if ($("input:checked").val() === "Yes")
+         {
+            $(this).text("Your Answer is Correct");
+            total += 1 ;
+        } 
+        else 
+        {
+            $(this).text("Your Answer is Wrong");
+        }
+        $("#res").text(total) ;
+    });
+});
+            
+
+            
+            // alert($(".answer div:gt(1)".length)) ;
+
+
+        </script>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+                <a href="">Home</a>
+                
+                <div class="menue">
+                    <button class="b">Services</button>
+                    <div class="menue-links">
+                        <a href="web_design.html">Web Design</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Hosting</a>
+                        <a href="#">Web Training</a>
+                    </div>
+                </div>
+                <a href="product.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            
+        </nav>
+        <div class="aside-main">
+
+        <aside>
+            <a href="home.html">Home page</a>
+            <div class="quiz-menue">
+                <button onclick="drop('quizes')">Quiz</button>
+                <div class="quizes">
+                    <a href="quiz1.html">Quiz 1</a>
+                    <a href="quiz2.html">Quiz 2</a>
+                    <a href="quiz3.html">Quiz 3</a>
+                    
+                </div>
+
+            
+            <div class="slide-menue">
+                <button onclick="drop('slides')">Slider</button>
+                <div class="slides">
+                    <a href="slider1.html">Slider 1</a>
+                    <a href="slider2.html">Slider 2</a>
+                   
+                </div>
+
+            </div>
+
+        </aside>
+        <main class="quiz-main">
+               <div class="quiz2-cotainer">
+                    <div class="cotainer-title"  >
+                            <p>1 &rpar; Question Number one... ? </p>
+                            <span>+</span>
+                    </div>
+                    <div class="cotainer-body">
+                        <div class="quiz3-inputs">
+                            <form action="">
+                                <input type="radio" value="Yes" name="yes">Yes 
+                                <input type="radio" value="No" name="yes">No
+                            </form>
+                        </div>
+
+                        <div class="check-answer">
+                                Answer
+                        </div>
+                        
+                    </div>
+
+               </div>
+               <div class="quiz2-cotainer">
+                    <div class="cotainer-title">
+                        <p> <p>2 &rpar; Question Number Two... ? </p></p>
+                        <span>+</span>
+                    </div>
+                     <div class="cotainer-body">
+                        <div class="quiz3-inputs">
+                            <form action="">
+                                <input type="radio" value="Yes" name="yes">Yes 
+                                <input type="radio" value="No" name="yes">No
+                            </form>
+                       </div>
+
+                       <div class="check-answer">
+                        Answer
+                       </div>
+                        
+                     </div>
+
+               </div>
+               <div class="quiz2-cotainer">
+                    <div class="cotainer-title">
+                        <p> <p>3 &rpar; Question Number Three... ? </p></p>
+                        <span>+</span>
+                    </div>
+                    <div class="cotainer-body">
+                        <div class="quiz3-inputs">
+                            <form action="">
+                                <input type="radio" value="Yes" name="yes">Yes 
+                                <input type="radio" value="No" name="yes">No
+                            </form>
+                       </div>
+
+                       <div class="check-answer">
+                        Answer
+                       </div>
+                        
+                    </div>
+                    
+
+               </div>
+               <div class="Counter">
+                <p>Get Result</p>
+                <p id="res">0</p>
+            </div>
+        </main>
+    </div>
+        <footer>
+            <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+        </footer>
+
+    </body>
+</html>

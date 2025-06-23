@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta name="description" content="home page for electronic store" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Web Design</title>
+        <style></style>
+        <script src="../javascript/main.js"></script>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="../img/pngwing.com.png" alt="Logo"></a>
+            <h1>Welcome To <strong>BookStore</strong> Website</h1>
+        </header>
+        <nav>
+            
+                <a href="">Home</a>
+                
+                <div class="menue">
+                    <button class="b">Services</button>
+                    <div class="menue-links">
+                        <a href="animation.html">Animation</a>
+                        <a href="#">Hosting</a>
+                        <a href="#">Web Training</a>
+                        <a href="web_design.html">Web Design</a>
+                        <a href="web_developement.html">Web Development</a>
+                        <a href="customers.html">Customers</a>
+                        <a href="receipt.html">Receipt</a>
+                    </div>
+                </div>
+                <a href="product.html">Products</a>
+                <a href="about">About Us</a>
+                <a href="contact">Contact Us</a>
+
+            
+        </nav>
+        <aside></aside>
+        <main class="web-design-main">
+                <div class="container">
+                        <div class="form-container">
+                            <form action="" method="get">
+                                    <label for="">First name :</label>
+                                    <input id="fname" type="text" name="fname" placeholder="Your name...">
+                                <br>
+                                    <label for=""> last Name :</label>
+                                    <input id="lname" type="text" name="lname" placeholder="Your Last Name...">
+                                <br>
+                                    <label for="">Country :</label>
+                                    <input id="country-input" list="country" placeholder="Choose Country...">
+                                <datalist name="country"  id="country" >
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Palestine">Palestine</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Iraq">Iraq</option>
+                                </datalist>
+                                <br>
+                                <label for="sub">Subject</label>
+                                <br>
+                                <textarea name="subject" id="sub" placeholder="Write Something..."></textarea >
+                            </form>
+
+                        </div>
+                        <div class="screen">
+                            <p id="printed-text"></p>
+                        </div>
+                </div>
+                 <button class="web_design-button" onclick="web_design_print()">print</button>
+                 
+        </main>
+        <footer>
+            <p> &copy;Copyright 2025 | made by Ahmed Moneim </p>
+        </footer>
+
+    </body>
+</html>
